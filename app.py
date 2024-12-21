@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 def prediction(lst):
 #    filename = 'model/predictor.pickle'
-    filename = 'C:/Users/sayan/Downloads/FT252082_LaptopPricePredictor/web application/model/predictor.pickle'
+    filename = 'model/predictor.pickle'
     with open(filename, 'rb') as file:
         model = pickle.load(file)
     pred_value = model.predict([lst])
